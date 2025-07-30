@@ -97,6 +97,9 @@
 (function () {
     var canvas, devices, app;
 
+    // Set ASSET_PREFIX to empty string to fix loading paths
+    var ASSET_PREFIX = "";
+
     var createInputDevices = function (canvas) {
         var devices = {
             elementInput: new pc.ElementInput(canvas, {
